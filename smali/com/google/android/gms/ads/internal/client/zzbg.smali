@@ -1,0 +1,57 @@
+.class public abstract Lcom/google/android/gms/ads/internal/client/zzbg;
+.super Lcom/google/android/gms/internal/ads/zzbct;
+.source "r8-map-id-9557960e7f1fd717aaa4475931a9fe1958392a9212be702aa22a2b0afaf31f05"
+
+# interfaces
+.implements Lcom/google/android/gms/ads/internal/client/zzbh;
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 1
+
+    .line 1
+    const-string v0, "com.google.android.gms.ads.internal.client.IAdClickListener"
+
+    .line 2
+    .line 3
+    invoke-direct {p0, v0}, Lcom/google/android/gms/internal/ads/zzbct;-><init>(Ljava/lang/String;)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final a(ILandroid/os/Parcel;Landroid/os/Parcel;)Z
+    .locals 0
+
+    .line 1
+    const/4 p2, 0x1
+
+    .line 2
+    if-ne p1, p2, :cond_0
+
+    .line 3
+    .line 4
+    invoke-interface {p0}, Lcom/google/android/gms/ads/internal/client/zzbh;->zzb()V
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
+
+    .line 8
+    .line 9
+    .line 10
+    return p2
+
+    .line 11
+    :cond_0
+    const/4 p0, 0x0
+
+    .line 12
+    return p0
+.end method

@@ -1,0 +1,20 @@
+.class public interface abstract Ldq1;
+.super Ljava/lang/Object;
+.source "r8-map-id-9557960e7f1fd717aaa4475931a9fe1958392a9212be702aa22a2b0afaf31f05"
+
+# interfaces
+.implements Ljava/util/List;
+
+
+# virtual methods
+.method public abstract a()Ljava/util/List;
+.end method
+
+.method public abstract f(I)Lgs;
+.end method
+
+.method public abstract h()Llp3;
+.end method
+
+.method public abstract i(Lit1;)V
+.end method

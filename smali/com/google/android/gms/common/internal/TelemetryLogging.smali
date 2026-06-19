@@ -1,0 +1,35 @@
+.class public Lcom/google/android/gms/common/internal/TelemetryLogging;
+.super Ljava/lang/Object;
+.source "r8-map-id-9557960e7f1fd717aaa4475931a9fe1958392a9212be702aa22a2b0afaf31f05"
+
+
+# direct methods
+.method public static getClient(Landroid/content/Context;)Lcom/google/android/gms/common/internal/TelemetryLoggingClient;
+    .locals 1
+
+    .line 1
+    sget-object v0, Lcom/google/android/gms/common/internal/TelemetryLoggingOptions;->zaa:Lcom/google/android/gms/common/internal/TelemetryLoggingOptions;
+
+    .line 2
+    .line 3
+    invoke-static {p0, v0}, Lcom/google/android/gms/common/internal/TelemetryLogging;->getClient(Landroid/content/Context;Lcom/google/android/gms/common/internal/TelemetryLoggingOptions;)Lcom/google/android/gms/common/internal/TelemetryLoggingClient;
+
+    .line 4
+    .line 5
+    .line 6
+    move-result-object p0
+
+    .line 7
+    return-object p0
+.end method
+
+.method public static getClient(Landroid/content/Context;Lcom/google/android/gms/common/internal/TelemetryLoggingOptions;)Lcom/google/android/gms/common/internal/TelemetryLoggingClient;
+    .locals 1
+
+    .line 8
+    new-instance v0, Lcom/google/android/gms/common/internal/service/zao;
+
+    invoke-direct {v0, p0, p1}, Lcom/google/android/gms/common/internal/service/zao;-><init>(Landroid/content/Context;Lcom/google/android/gms/common/internal/TelemetryLoggingOptions;)V
+
+    return-object v0
+.end method

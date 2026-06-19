@@ -1,0 +1,158 @@
+.class public final Lcom/google/android/gms/internal/consent_sdk/zzgu;
+.super Lcom/google/android/gms/internal/consent_sdk/zzqj;
+.source "r8-map-id-9557960e7f1fd717aaa4475931a9fe1958392a9212be702aa22a2b0afaf31f05"
+
+# interfaces
+.implements Lcom/google/android/gms/internal/consent_sdk/zzrr;
+
+
+# virtual methods
+.method public final zza(Ljava/lang/String;)Lcom/google/android/gms/internal/consent_sdk/zzgu;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/consent_sdk/zzqj;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/android/gms/internal/consent_sdk/zzqj;->o:Lcom/google/android/gms/internal/consent_sdk/zzqm;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/google/android/gms/internal/consent_sdk/zzhc;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/consent_sdk/zzhc;->k(Lcom/google/android/gms/internal/consent_sdk/zzhc;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public final zzb(Ljava/lang/String;)Lcom/google/android/gms/internal/consent_sdk/zzgu;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/consent_sdk/zzqj;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/android/gms/internal/consent_sdk/zzqj;->o:Lcom/google/android/gms/internal/consent_sdk/zzqm;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/google/android/gms/internal/consent_sdk/zzhc;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/consent_sdk/zzhc;->l(Lcom/google/android/gms/internal/consent_sdk/zzhc;Ljava/lang/String;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public final zzc(Lcom/google/android/gms/internal/consent_sdk/zzgt;)Lcom/google/android/gms/internal/consent_sdk/zzgu;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/consent_sdk/zzqj;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/android/gms/internal/consent_sdk/zzqj;->o:Lcom/google/android/gms/internal/consent_sdk/zzqm;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/google/android/gms/internal/consent_sdk/zzhc;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/consent_sdk/zzhc;->m(Lcom/google/android/gms/internal/consent_sdk/zzhc;Lcom/google/android/gms/internal/consent_sdk/zzgt;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public final zzd(Lcom/google/android/gms/internal/consent_sdk/zzgw;)Lcom/google/android/gms/internal/consent_sdk/zzgu;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/consent_sdk/zzqj;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/android/gms/internal/consent_sdk/zzqj;->o:Lcom/google/android/gms/internal/consent_sdk/zzqm;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/google/android/gms/internal/consent_sdk/zzhc;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/consent_sdk/zzhc;->n(Lcom/google/android/gms/internal/consent_sdk/zzhc;Lcom/google/android/gms/internal/consent_sdk/zzgw;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public final zze(Lcom/google/android/gms/internal/consent_sdk/zzgy;)Lcom/google/android/gms/internal/consent_sdk/zzgu;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/consent_sdk/zzqj;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/android/gms/internal/consent_sdk/zzqj;->o:Lcom/google/android/gms/internal/consent_sdk/zzqm;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/google/android/gms/internal/consent_sdk/zzhc;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/consent_sdk/zzhc;->o(Lcom/google/android/gms/internal/consent_sdk/zzhc;Lcom/google/android/gms/internal/consent_sdk/zzgy;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method
+
+.method public final zzf(Lcom/google/android/gms/internal/consent_sdk/zzha;)Lcom/google/android/gms/internal/consent_sdk/zzgu;
+    .locals 1
+
+    .line 1
+    invoke-virtual {p0}, Lcom/google/android/gms/internal/consent_sdk/zzqj;->a()V
+
+    .line 2
+    .line 3
+    .line 4
+    iget-object v0, p0, Lcom/google/android/gms/internal/consent_sdk/zzqj;->o:Lcom/google/android/gms/internal/consent_sdk/zzqm;
+
+    .line 5
+    .line 6
+    check-cast v0, Lcom/google/android/gms/internal/consent_sdk/zzhc;
+
+    .line 7
+    .line 8
+    invoke-static {v0, p1}, Lcom/google/android/gms/internal/consent_sdk/zzhc;->p(Lcom/google/android/gms/internal/consent_sdk/zzhc;Lcom/google/android/gms/internal/consent_sdk/zzha;)V
+
+    .line 9
+    .line 10
+    .line 11
+    return-object p0
+.end method

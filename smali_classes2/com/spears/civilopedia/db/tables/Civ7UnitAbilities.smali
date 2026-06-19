@@ -1,0 +1,2028 @@
+.class public final Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;
+.super Ljava/lang/Object;
+.source "r8-map-id-9557960e7f1fd717aaa4475931a9fe1958392a9212be702aa22a2b0afaf31f05"
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000\"\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\u0008\u0002\n\u0002\u0010\u0008\n\u0002\u0008\u0004\n\u0002\u0010\u000b\n\u0002\u00083\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u0093\u0001\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0008\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0010\u0008\u001a\u0004\u0018\u00010\u0006\u0012\u0008\u0010\t\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\n\u001a\u00020\u000b\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u0006\u0012\u0008\u0010\r\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u0006\u0012\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u0003\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0003\u0012\u0006\u0010\u0011\u001a\u00020\u000b\u0012\u0006\u0010\u0012\u001a\u00020\u000b\u0012\u0006\u0010\u0013\u001a\u00020\u000b\u00a2\u0006\u0004\u0008\u0014\u0010\u0015J\t\u0010)\u001a\u00020\u0003H\u00c6\u0003J\u000b\u0010*\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u0010\u0010+\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003\u00a2\u0006\u0002\u0010\u001aJ\u000b\u0010,\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u0010\u0010-\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003\u00a2\u0006\u0002\u0010\u001aJ\u000b\u0010.\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u0010/\u001a\u00020\u000bH\u00c6\u0003J\u0010\u00100\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003\u00a2\u0006\u0002\u0010\u001aJ\u000b\u00101\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u0010\u00102\u001a\u0004\u0018\u00010\u0006H\u00c6\u0003\u00a2\u0006\u0002\u0010\u001aJ\u000b\u00103\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\u000b\u00104\u001a\u0004\u0018\u00010\u0003H\u00c6\u0003J\t\u00105\u001a\u00020\u000bH\u00c6\u0003J\t\u00106\u001a\u00020\u000bH\u00c6\u0003J\t\u00107\u001a\u00020\u000bH\u00c6\u0003J\u00b8\u0001\u00108\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0002\u001a\u00020\u00032\n\u0008\u0002\u0010\u0004\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0005\u001a\u0004\u0018\u00010\u00062\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0008\u001a\u0004\u0018\u00010\u00062\n\u0008\u0002\u0010\t\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\n\u001a\u00020\u000b2\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u00062\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00062\n\u0008\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00032\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00032\u0008\u0008\u0002\u0010\u0011\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u000b2\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u000bH\u00c6\u0001\u00a2\u0006\u0002\u00109J\u0013\u0010:\u001a\u00020\u000b2\u0008\u0010;\u001a\u0004\u0018\u00010\u0001H\u00d6\u0003J\t\u0010<\u001a\u00020\u0006H\u00d6\u0001J\t\u0010=\u001a\u00020\u0003H\u00d6\u0001R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0016\u0010\u0017R\u0013\u0010\u0004\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u0018\u0010\u0017R\u0015\u0010\u0005\u001a\u0004\u0018\u00010\u0006\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008\u0019\u0010\u001aR\u0013\u0010\u0007\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001c\u0010\u0017R\u0015\u0010\u0008\u001a\u0004\u0018\u00010\u0006\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008\u001d\u0010\u001aR\u0013\u0010\t\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001e\u0010\u0017R\u0011\u0010\n\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\u001f\u0010 R\u0015\u0010\u000c\u001a\u0004\u0018\u00010\u0006\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008!\u0010\u001aR\u0013\u0010\r\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\"\u0010\u0017R\u0015\u0010\u000e\u001a\u0004\u0018\u00010\u0006\u00a2\u0006\n\n\u0002\u0010\u001b\u001a\u0004\u0008#\u0010\u001aR\u0013\u0010\u000f\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008$\u0010\u0017R\u0013\u0010\u0010\u001a\u0004\u0018\u00010\u0003\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008%\u0010\u0017R\u0011\u0010\u0011\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008&\u0010 R\u0011\u0010\u0012\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008\'\u0010 R\u0011\u0010\u0013\u001a\u00020\u000b\u00a2\u0006\u0008\n\u0000\u001a\u0004\u0008(\u0010 \u00a8\u0006>"
+    }
+    d2 = {
+        "Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;",
+        "",
+        "unitAbilityType",
+        "",
+        "abilityData",
+        "abilityValue",
+        "",
+        "commandType",
+        "damageAmount",
+        "description",
+        "inactive",
+        "",
+        "keywordAbilityDuration",
+        "keywordAbilityType",
+        "keywordAbilityValue",
+        "name",
+        "operationType",
+        "permanent",
+        "shareWithChildren",
+        "showFloatTextWhenEarned",
+        "<init>",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZZ)V",
+        "getUnitAbilityType",
+        "()Ljava/lang/String;",
+        "getAbilityData",
+        "getAbilityValue",
+        "()Ljava/lang/Integer;",
+        "Ljava/lang/Integer;",
+        "getCommandType",
+        "getDamageAmount",
+        "getDescription",
+        "getInactive",
+        "()Z",
+        "getKeywordAbilityDuration",
+        "getKeywordAbilityType",
+        "getKeywordAbilityValue",
+        "getName",
+        "getOperationType",
+        "getPermanent",
+        "getShareWithChildren",
+        "getShowFloatTextWhenEarned",
+        "component1",
+        "component2",
+        "component3",
+        "component4",
+        "component5",
+        "component6",
+        "component7",
+        "component8",
+        "component9",
+        "component10",
+        "component11",
+        "component12",
+        "component13",
+        "component14",
+        "component15",
+        "copy",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZZ)Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;",
+        "equals",
+        "other",
+        "hashCode",
+        "toString",
+        "app_regularGoogleRelease"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+
+# instance fields
+.field private final abilityData:Ljava/lang/String;
+
+.field private final abilityValue:Ljava/lang/Integer;
+
+.field private final commandType:Ljava/lang/String;
+
+.field private final damageAmount:Ljava/lang/Integer;
+
+.field private final description:Ljava/lang/String;
+
+.field private final inactive:Z
+
+.field private final keywordAbilityDuration:Ljava/lang/Integer;
+
+.field private final keywordAbilityType:Ljava/lang/String;
+
+.field private final keywordAbilityValue:Ljava/lang/Integer;
+
+.field private final name:Ljava/lang/String;
+
+.field private final operationType:Ljava/lang/String;
+
+.field private final permanent:Z
+
+.field private final shareWithChildren:Z
+
+.field private final showFloatTextWhenEarned:Z
+
+.field private final unitAbilityType:Ljava/lang/String;
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZZ)V
+    .locals 0
+
+    .line 1
+    invoke-virtual {p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iput-object p2, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object p3, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 12
+    .line 13
+    iput-object p4, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iput-object p5, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 16
+    .line 17
+    iput-object p6, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 18
+    .line 19
+    iput-boolean p7, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 20
+    .line 21
+    iput-object p8, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 22
+    .line 23
+    iput-object p9, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    iput-object p10, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 26
+    .line 27
+    iput-object p11, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    iput-object p12, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 30
+    .line 31
+    iput-boolean p13, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 32
+    .line 33
+    iput-boolean p14, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 34
+    .line 35
+    iput-boolean p15, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 36
+    .line 37
+    return-void
+.end method
+
+.method public static synthetic copy$default(Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZZILjava/lang/Object;)Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;
+    .locals 16
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move/from16 v1, p16
+
+    .line 4
+    .line 5
+    and-int/lit8 v2, v1, 0x1
+
+    .line 6
+    .line 7
+    if-eqz v2, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v2, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    move-object/from16 v2, p1
+
+    .line 13
+    .line 14
+    :goto_0
+    and-int/lit8 v3, v1, 0x2
+
+    .line 15
+    .line 16
+    if-eqz v3, :cond_1
+
+    .line 17
+    .line 18
+    iget-object v3, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    goto :goto_1
+
+    .line 21
+    :cond_1
+    move-object/from16 v3, p2
+
+    .line 22
+    .line 23
+    :goto_1
+    and-int/lit8 v4, v1, 0x4
+
+    .line 24
+    .line 25
+    if-eqz v4, :cond_2
+
+    .line 26
+    .line 27
+    iget-object v4, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 28
+    .line 29
+    goto :goto_2
+
+    .line 30
+    :cond_2
+    move-object/from16 v4, p3
+
+    .line 31
+    .line 32
+    :goto_2
+    and-int/lit8 v5, v1, 0x8
+
+    .line 33
+    .line 34
+    if-eqz v5, :cond_3
+
+    .line 35
+    .line 36
+    iget-object v5, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 37
+    .line 38
+    goto :goto_3
+
+    .line 39
+    :cond_3
+    move-object/from16 v5, p4
+
+    .line 40
+    .line 41
+    :goto_3
+    and-int/lit8 v6, v1, 0x10
+
+    .line 42
+    .line 43
+    if-eqz v6, :cond_4
+
+    .line 44
+    .line 45
+    iget-object v6, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 46
+    .line 47
+    goto :goto_4
+
+    .line 48
+    :cond_4
+    move-object/from16 v6, p5
+
+    .line 49
+    .line 50
+    :goto_4
+    and-int/lit8 v7, v1, 0x20
+
+    .line 51
+    .line 52
+    if-eqz v7, :cond_5
+
+    .line 53
+    .line 54
+    iget-object v7, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 55
+    .line 56
+    goto :goto_5
+
+    .line 57
+    :cond_5
+    move-object/from16 v7, p6
+
+    .line 58
+    .line 59
+    :goto_5
+    and-int/lit8 v8, v1, 0x40
+
+    .line 60
+    .line 61
+    if-eqz v8, :cond_6
+
+    .line 62
+    .line 63
+    iget-boolean v8, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 64
+    .line 65
+    goto :goto_6
+
+    .line 66
+    :cond_6
+    move/from16 v8, p7
+
+    .line 67
+    .line 68
+    :goto_6
+    and-int/lit16 v9, v1, 0x80
+
+    .line 69
+    .line 70
+    if-eqz v9, :cond_7
+
+    .line 71
+    .line 72
+    iget-object v9, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 73
+    .line 74
+    goto :goto_7
+
+    .line 75
+    :cond_7
+    move-object/from16 v9, p8
+
+    .line 76
+    .line 77
+    :goto_7
+    and-int/lit16 v10, v1, 0x100
+
+    .line 78
+    .line 79
+    if-eqz v10, :cond_8
+
+    .line 80
+    .line 81
+    iget-object v10, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 82
+    .line 83
+    goto :goto_8
+
+    .line 84
+    :cond_8
+    move-object/from16 v10, p9
+
+    .line 85
+    .line 86
+    :goto_8
+    and-int/lit16 v11, v1, 0x200
+
+    .line 87
+    .line 88
+    if-eqz v11, :cond_9
+
+    .line 89
+    .line 90
+    iget-object v11, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 91
+    .line 92
+    goto :goto_9
+
+    .line 93
+    :cond_9
+    move-object/from16 v11, p10
+
+    .line 94
+    .line 95
+    :goto_9
+    and-int/lit16 v12, v1, 0x400
+
+    .line 96
+    .line 97
+    if-eqz v12, :cond_a
+
+    .line 98
+    .line 99
+    iget-object v12, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 100
+    .line 101
+    goto :goto_a
+
+    .line 102
+    :cond_a
+    move-object/from16 v12, p11
+
+    .line 103
+    .line 104
+    :goto_a
+    and-int/lit16 v13, v1, 0x800
+
+    .line 105
+    .line 106
+    if-eqz v13, :cond_b
+
+    .line 107
+    .line 108
+    iget-object v13, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 109
+    .line 110
+    goto :goto_b
+
+    .line 111
+    :cond_b
+    move-object/from16 v13, p12
+
+    .line 112
+    .line 113
+    :goto_b
+    and-int/lit16 v14, v1, 0x1000
+
+    .line 114
+    .line 115
+    if-eqz v14, :cond_c
+
+    .line 116
+    .line 117
+    iget-boolean v14, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 118
+    .line 119
+    goto :goto_c
+
+    .line 120
+    :cond_c
+    move/from16 v14, p13
+
+    .line 121
+    .line 122
+    :goto_c
+    and-int/lit16 v15, v1, 0x2000
+
+    .line 123
+    .line 124
+    if-eqz v15, :cond_d
+
+    .line 125
+    .line 126
+    iget-boolean v15, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 127
+    .line 128
+    goto :goto_d
+
+    .line 129
+    :cond_d
+    move/from16 v15, p14
+
+    .line 130
+    .line 131
+    :goto_d
+    and-int/lit16 v1, v1, 0x4000
+
+    .line 132
+    .line 133
+    if-eqz v1, :cond_e
+
+    .line 134
+    .line 135
+    iget-boolean v1, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 136
+    .line 137
+    move/from16 p16, v1
+
+    .line 138
+    .line 139
+    :goto_e
+    move-object/from16 p1, v0
+
+    .line 140
+    .line 141
+    move-object/from16 p2, v2
+
+    .line 142
+    .line 143
+    move-object/from16 p3, v3
+
+    .line 144
+    .line 145
+    move-object/from16 p4, v4
+
+    .line 146
+    .line 147
+    move-object/from16 p5, v5
+
+    .line 148
+    .line 149
+    move-object/from16 p6, v6
+
+    .line 150
+    .line 151
+    move-object/from16 p7, v7
+
+    .line 152
+    .line 153
+    move/from16 p8, v8
+
+    .line 154
+    .line 155
+    move-object/from16 p9, v9
+
+    .line 156
+    .line 157
+    move-object/from16 p10, v10
+
+    .line 158
+    .line 159
+    move-object/from16 p11, v11
+
+    .line 160
+    .line 161
+    move-object/from16 p12, v12
+
+    .line 162
+    .line 163
+    move-object/from16 p13, v13
+
+    .line 164
+    .line 165
+    move/from16 p14, v14
+
+    .line 166
+    .line 167
+    move/from16 p15, v15
+
+    .line 168
+    .line 169
+    goto :goto_f
+
+    .line 170
+    :cond_e
+    move/from16 p16, p15
+
+    .line 171
+    .line 172
+    goto :goto_e
+
+    .line 173
+    :goto_f
+    invoke-virtual/range {p1 .. p16}, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZZ)Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;
+
+    .line 174
+    .line 175
+    .line 176
+    move-result-object v0
+
+    .line 177
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final component1()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component10()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component11()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component12()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component13()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component14()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component15()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component2()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component3()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component4()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component5()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component6()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component7()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component8()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component9()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZZ)Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;
+    .locals 16
+
+    .line 1
+    invoke-virtual/range {p1 .. p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    new-instance v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;
+
+    .line 5
+    .line 6
+    move-object/from16 v1, p1
+
+    .line 7
+    .line 8
+    move-object/from16 v2, p2
+
+    .line 9
+    .line 10
+    move-object/from16 v3, p3
+
+    .line 11
+    .line 12
+    move-object/from16 v4, p4
+
+    .line 13
+    .line 14
+    move-object/from16 v5, p5
+
+    .line 15
+    .line 16
+    move-object/from16 v6, p6
+
+    .line 17
+    .line 18
+    move/from16 v7, p7
+
+    .line 19
+    .line 20
+    move-object/from16 v8, p8
+
+    .line 21
+    .line 22
+    move-object/from16 v9, p9
+
+    .line 23
+    .line 24
+    move-object/from16 v10, p10
+
+    .line 25
+    .line 26
+    move-object/from16 v11, p11
+
+    .line 27
+    .line 28
+    move-object/from16 v12, p12
+
+    .line 29
+    .line 30
+    move/from16 v13, p13
+
+    .line 31
+    .line 32
+    move/from16 v14, p14
+
+    .line 33
+    .line 34
+    move/from16 v15, p15
+
+    .line 35
+    .line 36
+    invoke-direct/range {v0 .. v15}, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;ZLjava/lang/Integer;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZZ)V
+
+    .line 37
+    .line 38
+    .line 39
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-nez v1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 36
+    .line 37
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 38
+    .line 39
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v1
+
+    .line 43
+    if-nez v1, :cond_4
+
+    .line 44
+    .line 45
+    return v2
+
+    .line 46
+    :cond_4
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 47
+    .line 48
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 49
+    .line 50
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v1
+
+    .line 54
+    if-nez v1, :cond_5
+
+    .line 55
+    .line 56
+    return v2
+
+    .line 57
+    :cond_5
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 58
+    .line 59
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 60
+    .line 61
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v1
+
+    .line 65
+    if-nez v1, :cond_6
+
+    .line 66
+    .line 67
+    return v2
+
+    .line 68
+    :cond_6
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 69
+    .line 70
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 71
+    .line 72
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 73
+    .line 74
+    .line 75
+    move-result v1
+
+    .line 76
+    if-nez v1, :cond_7
+
+    .line 77
+    .line 78
+    return v2
+
+    .line 79
+    :cond_7
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 80
+    .line 81
+    iget-boolean v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 82
+    .line 83
+    if-eq v1, v3, :cond_8
+
+    .line 84
+    .line 85
+    return v2
+
+    .line 86
+    :cond_8
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 87
+    .line 88
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 89
+    .line 90
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 91
+    .line 92
+    .line 93
+    move-result v1
+
+    .line 94
+    if-nez v1, :cond_9
+
+    .line 95
+    .line 96
+    return v2
+
+    .line 97
+    :cond_9
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 98
+    .line 99
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 100
+    .line 101
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 102
+    .line 103
+    .line 104
+    move-result v1
+
+    .line 105
+    if-nez v1, :cond_a
+
+    .line 106
+    .line 107
+    return v2
+
+    .line 108
+    :cond_a
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 109
+    .line 110
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 111
+    .line 112
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 113
+    .line 114
+    .line 115
+    move-result v1
+
+    .line 116
+    if-nez v1, :cond_b
+
+    .line 117
+    .line 118
+    return v2
+
+    .line 119
+    :cond_b
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 120
+    .line 121
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 122
+    .line 123
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 124
+    .line 125
+    .line 126
+    move-result v1
+
+    .line 127
+    if-nez v1, :cond_c
+
+    .line 128
+    .line 129
+    return v2
+
+    .line 130
+    :cond_c
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 131
+    .line 132
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 133
+    .line 134
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 135
+    .line 136
+    .line 137
+    move-result v1
+
+    .line 138
+    if-nez v1, :cond_d
+
+    .line 139
+    .line 140
+    return v2
+
+    .line 141
+    :cond_d
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 142
+    .line 143
+    iget-boolean v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 144
+    .line 145
+    if-eq v1, v3, :cond_e
+
+    .line 146
+    .line 147
+    return v2
+
+    .line 148
+    :cond_e
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 149
+    .line 150
+    iget-boolean v3, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 151
+    .line 152
+    if-eq v1, v3, :cond_f
+
+    .line 153
+    .line 154
+    return v2
+
+    .line 155
+    :cond_f
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 156
+    .line 157
+    iget-boolean p1, p1, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 158
+    .line 159
+    if-eq p0, p1, :cond_10
+
+    .line 160
+    .line 161
+    return v2
+
+    .line 162
+    :cond_10
+    return v0
+.end method
+
+.method public final getAbilityData()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getAbilityValue()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getCommandType()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getDamageAmount()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getDescription()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getInactive()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getKeywordAbilityDuration()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getKeywordAbilityType()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getKeywordAbilityValue()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getName()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getOperationType()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getPermanent()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getShareWithChildren()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getShowFloatTextWhenEarned()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getUnitAbilityType()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public hashCode()I
+    .locals 5
+
+    .line 1
+    iget-object v0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 8
+    .line 9
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    const/4 v2, 0x0
+
+    .line 12
+    if-nez v1, :cond_0
+
+    .line 13
+    .line 14
+    move v1, v2
+
+    .line 15
+    goto :goto_0
+
+    .line 16
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 17
+    .line 18
+    .line 19
+    move-result v1
+
+    .line 20
+    :goto_0
+    add-int/2addr v0, v1
+
+    .line 21
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 22
+    .line 23
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 24
+    .line 25
+    if-nez v1, :cond_1
+
+    .line 26
+    .line 27
+    move v1, v2
+
+    .line 28
+    goto :goto_1
+
+    .line 29
+    :cond_1
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v1
+
+    .line 33
+    :goto_1
+    add-int/2addr v0, v1
+
+    .line 34
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 35
+    .line 36
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 37
+    .line 38
+    if-nez v1, :cond_2
+
+    .line 39
+    .line 40
+    move v1, v2
+
+    .line 41
+    goto :goto_2
+
+    .line 42
+    :cond_2
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 43
+    .line 44
+    .line 45
+    move-result v1
+
+    .line 46
+    :goto_2
+    add-int/2addr v0, v1
+
+    .line 47
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 48
+    .line 49
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 50
+    .line 51
+    if-nez v1, :cond_3
+
+    .line 52
+    .line 53
+    move v1, v2
+
+    .line 54
+    goto :goto_3
+
+    .line 55
+    :cond_3
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 56
+    .line 57
+    .line 58
+    move-result v1
+
+    .line 59
+    :goto_3
+    add-int/2addr v0, v1
+
+    .line 60
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 61
+    .line 62
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 63
+    .line 64
+    if-nez v1, :cond_4
+
+    .line 65
+    .line 66
+    move v1, v2
+
+    .line 67
+    goto :goto_4
+
+    .line 68
+    :cond_4
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 69
+    .line 70
+    .line 71
+    move-result v1
+
+    .line 72
+    :goto_4
+    add-int/2addr v0, v1
+
+    .line 73
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 74
+    .line 75
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 76
+    .line 77
+    const/16 v3, 0x4d5
+
+    .line 78
+    .line 79
+    const/16 v4, 0x4cf
+
+    .line 80
+    .line 81
+    if-eqz v1, :cond_5
+
+    .line 82
+    .line 83
+    move v1, v4
+
+    .line 84
+    goto :goto_5
+
+    .line 85
+    :cond_5
+    move v1, v3
+
+    .line 86
+    :goto_5
+    add-int/2addr v0, v1
+
+    .line 87
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 88
+    .line 89
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 90
+    .line 91
+    if-nez v1, :cond_6
+
+    .line 92
+    .line 93
+    move v1, v2
+
+    .line 94
+    goto :goto_6
+
+    .line 95
+    :cond_6
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 96
+    .line 97
+    .line 98
+    move-result v1
+
+    .line 99
+    :goto_6
+    add-int/2addr v0, v1
+
+    .line 100
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 101
+    .line 102
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 103
+    .line 104
+    if-nez v1, :cond_7
+
+    .line 105
+    .line 106
+    move v1, v2
+
+    .line 107
+    goto :goto_7
+
+    .line 108
+    :cond_7
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v1
+
+    .line 112
+    :goto_7
+    add-int/2addr v0, v1
+
+    .line 113
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 114
+    .line 115
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 116
+    .line 117
+    if-nez v1, :cond_8
+
+    .line 118
+    .line 119
+    move v1, v2
+
+    .line 120
+    goto :goto_8
+
+    .line 121
+    :cond_8
+    invoke-virtual {v1}, Ljava/lang/Object;->hashCode()I
+
+    .line 122
+    .line 123
+    .line 124
+    move-result v1
+
+    .line 125
+    :goto_8
+    add-int/2addr v0, v1
+
+    .line 126
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 127
+    .line 128
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 129
+    .line 130
+    if-nez v1, :cond_9
+
+    .line 131
+    .line 132
+    move v1, v2
+
+    .line 133
+    goto :goto_9
+
+    .line 134
+    :cond_9
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 135
+    .line 136
+    .line 137
+    move-result v1
+
+    .line 138
+    :goto_9
+    add-int/2addr v0, v1
+
+    .line 139
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 140
+    .line 141
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 142
+    .line 143
+    if-nez v1, :cond_a
+
+    .line 144
+    .line 145
+    goto :goto_a
+
+    .line 146
+    :cond_a
+    invoke-virtual {v1}, Ljava/lang/String;->hashCode()I
+
+    .line 147
+    .line 148
+    .line 149
+    move-result v2
+
+    .line 150
+    :goto_a
+    add-int/2addr v0, v2
+
+    .line 151
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 152
+    .line 153
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 154
+    .line 155
+    if-eqz v1, :cond_b
+
+    .line 156
+    .line 157
+    move v1, v4
+
+    .line 158
+    goto :goto_b
+
+    .line 159
+    :cond_b
+    move v1, v3
+
+    .line 160
+    :goto_b
+    add-int/2addr v0, v1
+
+    .line 161
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 162
+    .line 163
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 164
+    .line 165
+    if-eqz v1, :cond_c
+
+    .line 166
+    .line 167
+    move v1, v4
+
+    .line 168
+    goto :goto_c
+
+    .line 169
+    :cond_c
+    move v1, v3
+
+    .line 170
+    :goto_c
+    add-int/2addr v0, v1
+
+    .line 171
+    mul-int/lit8 v0, v0, 0x1f
+
+    .line 172
+    .line 173
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 174
+    .line 175
+    if-eqz p0, :cond_d
+
+    .line 176
+    .line 177
+    move v3, v4
+
+    .line 178
+    :cond_d
+    add-int/2addr v0, v3
+
+    .line 179
+    return v0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 17
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    iget-object v1, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->unitAbilityType:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    iget-object v2, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityData:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    iget-object v3, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->abilityValue:Ljava/lang/Integer;
+
+    .line 8
+    .line 9
+    iget-object v4, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->commandType:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iget-object v5, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->damageAmount:Ljava/lang/Integer;
+
+    .line 12
+    .line 13
+    iget-object v6, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->description:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-boolean v7, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->inactive:Z
+
+    .line 16
+    .line 17
+    iget-object v8, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityDuration:Ljava/lang/Integer;
+
+    .line 18
+    .line 19
+    iget-object v9, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityType:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    iget-object v10, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->keywordAbilityValue:Ljava/lang/Integer;
+
+    .line 22
+    .line 23
+    iget-object v11, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->name:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    iget-object v12, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->operationType:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iget-boolean v13, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->permanent:Z
+
+    .line 28
+    .line 29
+    iget-boolean v14, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->shareWithChildren:Z
+
+    .line 30
+    .line 31
+    iget-boolean v0, v0, Lcom/spears/civilopedia/db/tables/Civ7UnitAbilities;->showFloatTextWhenEarned:Z
+
+    .line 32
+    .line 33
+    const-string v15, ", abilityData="
+
+    .line 34
+    .line 35
+    move/from16 p0, v0
+
+    .line 36
+    .line 37
+    const-string v0, ", abilityValue="
+
+    .line 38
+    .line 39
+    move/from16 v16, v13
+
+    .line 40
+    .line 41
+    const-string v13, "Civ7UnitAbilities(unitAbilityType="
+
+    .line 42
+    .line 43
+    invoke-static {v13, v1, v15, v2, v0}, Las;->z(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 44
+    .line 45
+    .line 46
+    move-result-object v0
+
+    .line 47
+    const-string v1, ", commandType="
+
+    .line 48
+    .line 49
+    const-string v2, ", damageAmount="
+
+    .line 50
+    .line 51
+    invoke-static {v0, v3, v1, v4, v2}, Las;->I(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 52
+    .line 53
+    .line 54
+    const-string v1, ", description="
+
+    .line 55
+    .line 56
+    const-string v2, ", inactive="
+
+    .line 57
+    .line 58
+    invoke-static {v0, v5, v1, v6, v2}, Las;->I(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 59
+    .line 60
+    .line 61
+    invoke-virtual {v0, v7}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 62
+    .line 63
+    .line 64
+    const-string v1, ", keywordAbilityDuration="
+
+    .line 65
+    .line 66
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 67
+    .line 68
+    .line 69
+    invoke-virtual {v0, v8}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 70
+    .line 71
+    .line 72
+    const-string v1, ", keywordAbilityType="
+
+    .line 73
+    .line 74
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 75
+    .line 76
+    .line 77
+    const-string v1, ", keywordAbilityValue="
+
+    .line 78
+    .line 79
+    const-string v2, ", name="
+
+    .line 80
+    .line 81
+    invoke-static {v0, v9, v1, v10, v2}, Las;->J(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/Integer;Ljava/lang/String;)V
+
+    .line 82
+    .line 83
+    .line 84
+    const-string v1, ", operationType="
+
+    .line 85
+    .line 86
+    const-string v2, ", permanent="
+
+    .line 87
+    .line 88
+    invoke-static {v0, v11, v1, v12, v2}, Las;->K(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 89
+    .line 90
+    .line 91
+    const-string v1, ", shareWithChildren="
+
+    .line 92
+    .line 93
+    const-string v2, ", showFloatTextWhenEarned="
+
+    .line 94
+    .line 95
+    move/from16 v3, v16
+
+    .line 96
+    .line 97
+    invoke-static {v0, v3, v1, v14, v2}, Ld80;->w(Ljava/lang/StringBuilder;ZLjava/lang/String;ZLjava/lang/String;)V
+
+    .line 98
+    .line 99
+    .line 100
+    const-string v1, ")"
+
+    .line 101
+    .line 102
+    move/from16 v2, p0
+
+    .line 103
+    .line 104
+    invoke-static {v0, v2, v1}, Lfd2;->p(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    .line 105
+    .line 106
+    .line 107
+    move-result-object v0
+
+    .line 108
+    return-object v0
+.end method

@@ -1,0 +1,2816 @@
+.class public final Lcom/spears/civilopedia/db/tables/Projects;
+.super Ljava/lang/Object;
+.source "r8-map-id-9557960e7f1fd717aaa4475931a9fe1958392a9212be702aa22a2b0afaf31f05"
+
+# interfaces
+.implements Lg61;
+
+
+# annotations
+.annotation runtime Lkotlin/Metadata;
+    d1 = {
+        "\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\u0008\u0005\n\u0002\u0010\u0008\n\u0002\u0008\u0008\n\u0002\u0010\u000b\n\u0002\u0008(\n\u0002\u0010\u0000\n\u0002\u0008\u001d\u0008\u0087\u0008\u0018\u00002\u00020\u0001B\u00c5\u0001\u0012\u0006\u0010\u0003\u001a\u00020\u0002\u0012\u0006\u0010\u0004\u001a\u00020\u0002\u0012\u0006\u0010\u0005\u001a\u00020\u0002\u0012\u0008\u0010\u0006\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\u0007\u001a\u0004\u0018\u00010\u0002\u0012\u0006\u0010\t\u001a\u00020\u0008\u0012\u0006\u0010\n\u001a\u00020\u0002\u0012\u0006\u0010\u000b\u001a\u00020\u0008\u0012\u0008\u0010\u000c\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\r\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\u000e\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\u000f\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\u0010\u001a\u0004\u0018\u00010\u0002\u0012\u0006\u0010\u0012\u001a\u00020\u0011\u0012\u0006\u0010\u0013\u001a\u00020\u0011\u0012\u0008\u0010\u0014\u001a\u0004\u0018\u00010\u0008\u0012\u0008\u0010\u0015\u001a\u0004\u0018\u00010\u0008\u0012\u0008\u0010\u0016\u001a\u0004\u0018\u00010\u0002\u0012\u0008\u0010\u0017\u001a\u0004\u0018\u00010\u0002\u0012\u0006\u0010\u0018\u001a\u00020\u0011\u0012\u0006\u0010\u0019\u001a\u00020\u0011\u00a2\u0006\u0004\u0008\u001a\u0010\u001bJ\u000f\u0010\u001c\u001a\u00020\u0002H\u0016\u00a2\u0006\u0004\u0008\u001c\u0010\u001dJ\u0010\u0010\u001e\u001a\u00020\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008\u001e\u0010\u001dJ\u0010\u0010\u001f\u001a\u00020\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008\u001f\u0010\u001dJ\u0010\u0010 \u001a\u00020\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008 \u0010\u001dJ\u0012\u0010!\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008!\u0010\u001dJ\u0012\u0010\"\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008\"\u0010\u001dJ\u0010\u0010#\u001a\u00020\u0008H\u00c6\u0003\u00a2\u0006\u0004\u0008#\u0010$J\u0010\u0010%\u001a\u00020\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008%\u0010\u001dJ\u0010\u0010&\u001a\u00020\u0008H\u00c6\u0003\u00a2\u0006\u0004\u0008&\u0010$J\u0012\u0010\'\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008\'\u0010\u001dJ\u0012\u0010(\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008(\u0010\u001dJ\u0012\u0010)\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008)\u0010\u001dJ\u0012\u0010*\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008*\u0010\u001dJ\u0012\u0010+\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u0008+\u0010\u001dJ\u0010\u0010,\u001a\u00020\u0011H\u00c6\u0003\u00a2\u0006\u0004\u0008,\u0010-J\u0010\u0010.\u001a\u00020\u0011H\u00c6\u0003\u00a2\u0006\u0004\u0008.\u0010-J\u0012\u0010/\u001a\u0004\u0018\u00010\u0008H\u00c6\u0003\u00a2\u0006\u0004\u0008/\u00100J\u0012\u00101\u001a\u0004\u0018\u00010\u0008H\u00c6\u0003\u00a2\u0006\u0004\u00081\u00100J\u0012\u00102\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u00082\u0010\u001dJ\u0012\u00103\u001a\u0004\u0018\u00010\u0002H\u00c6\u0003\u00a2\u0006\u0004\u00083\u0010\u001dJ\u0010\u00104\u001a\u00020\u0011H\u00c6\u0003\u00a2\u0006\u0004\u00084\u0010-J\u0010\u00105\u001a\u00020\u0011H\u00c6\u0003\u00a2\u0006\u0004\u00085\u0010-J\u00f8\u0001\u00106\u001a\u00020\u00002\u0008\u0008\u0002\u0010\u0003\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0004\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u0005\u001a\u00020\u00022\n\u0008\u0002\u0010\u0006\u001a\u0004\u0018\u00010\u00022\n\u0008\u0002\u0010\u0007\u001a\u0004\u0018\u00010\u00022\u0008\u0008\u0002\u0010\t\u001a\u00020\u00082\u0008\u0008\u0002\u0010\n\u001a\u00020\u00022\u0008\u0008\u0002\u0010\u000b\u001a\u00020\u00082\n\u0008\u0002\u0010\u000c\u001a\u0004\u0018\u00010\u00022\n\u0008\u0002\u0010\r\u001a\u0004\u0018\u00010\u00022\n\u0008\u0002\u0010\u000e\u001a\u0004\u0018\u00010\u00022\n\u0008\u0002\u0010\u000f\u001a\u0004\u0018\u00010\u00022\n\u0008\u0002\u0010\u0010\u001a\u0004\u0018\u00010\u00022\u0008\u0008\u0002\u0010\u0012\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0013\u001a\u00020\u00112\n\u0008\u0002\u0010\u0014\u001a\u0004\u0018\u00010\u00082\n\u0008\u0002\u0010\u0015\u001a\u0004\u0018\u00010\u00082\n\u0008\u0002\u0010\u0016\u001a\u0004\u0018\u00010\u00022\n\u0008\u0002\u0010\u0017\u001a\u0004\u0018\u00010\u00022\u0008\u0008\u0002\u0010\u0018\u001a\u00020\u00112\u0008\u0008\u0002\u0010\u0019\u001a\u00020\u0011H\u00c6\u0001\u00a2\u0006\u0004\u00086\u00107J\u0010\u00108\u001a\u00020\u0002H\u00d6\u0001\u00a2\u0006\u0004\u00088\u0010\u001dJ\u0010\u00109\u001a\u00020\u0008H\u00d6\u0001\u00a2\u0006\u0004\u00089\u0010$J\u001a\u0010<\u001a\u00020\u00112\u0008\u0010;\u001a\u0004\u0018\u00010:H\u00d6\u0003\u00a2\u0006\u0004\u0008<\u0010=R\u0017\u0010\u0003\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0003\u0010>\u001a\u0004\u0008?\u0010\u001dR\u0017\u0010\u0004\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0004\u0010>\u001a\u0004\u0008@\u0010\u001dR\u0017\u0010\u0005\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0005\u0010>\u001a\u0004\u0008A\u0010\u001dR\u0019\u0010\u0006\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0006\u0010>\u001a\u0004\u0008B\u0010\u001dR\u0019\u0010\u0007\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0007\u0010>\u001a\u0004\u0008C\u0010\u001dR\u0017\u0010\t\u001a\u00020\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008\t\u0010D\u001a\u0004\u0008E\u0010$R\u0017\u0010\n\u001a\u00020\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\n\u0010>\u001a\u0004\u0008F\u0010\u001dR\u0017\u0010\u000b\u001a\u00020\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000b\u0010D\u001a\u0004\u0008G\u0010$R\u0019\u0010\u000c\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000c\u0010>\u001a\u0004\u0008H\u0010\u001dR\u0019\u0010\r\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\r\u0010>\u001a\u0004\u0008I\u0010\u001dR\u0019\u0010\u000e\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000e\u0010>\u001a\u0004\u0008J\u0010\u001dR\u0019\u0010\u000f\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u000f\u0010>\u001a\u0004\u0008K\u0010\u001dR\u0019\u0010\u0010\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0010\u0010>\u001a\u0004\u0008L\u0010\u001dR\u0017\u0010\u0012\u001a\u00020\u00118\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0012\u0010M\u001a\u0004\u0008N\u0010-R\u0017\u0010\u0013\u001a\u00020\u00118\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0013\u0010M\u001a\u0004\u0008O\u0010-R\u0019\u0010\u0014\u001a\u0004\u0018\u00010\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0014\u0010P\u001a\u0004\u0008Q\u00100R\u0019\u0010\u0015\u001a\u0004\u0018\u00010\u00088\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0015\u0010P\u001a\u0004\u0008R\u00100R\u0019\u0010\u0016\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0016\u0010>\u001a\u0004\u0008S\u0010\u001dR\u0019\u0010\u0017\u001a\u0004\u0018\u00010\u00028\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0017\u0010>\u001a\u0004\u0008T\u0010\u001dR\u0017\u0010\u0018\u001a\u00020\u00118\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0018\u0010M\u001a\u0004\u0008U\u0010-R\u0017\u0010\u0019\u001a\u00020\u00118\u0006\u00a2\u0006\u000c\n\u0004\u0008\u0019\u0010M\u001a\u0004\u0008V\u0010-\u00a8\u0006W"
+    }
+    d2 = {
+        "Lcom/spears/civilopedia/db/tables/Projects;",
+        "Lg61;",
+        "",
+        "projectType",
+        "name",
+        "shortName",
+        "description",
+        "popupText",
+        "",
+        "cost",
+        "costProgressionModel",
+        "costProgressionParam1",
+        "prereqTech",
+        "prereqCivic",
+        "prereqDistrict",
+        "requiredBuilding",
+        "visualBuildingType",
+        "",
+        "spaceRace",
+        "outerDefenseRepair",
+        "maxPlayerInstances",
+        "amenitiesWhileActive",
+        "prereqResource",
+        "advisorType",
+        "wMD",
+        "unlocksFromEffect",
+        "<init>",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZ)V",
+        "primaryKey",
+        "()Ljava/lang/String;",
+        "component1",
+        "component2",
+        "component3",
+        "component4",
+        "component5",
+        "component6",
+        "()I",
+        "component7",
+        "component8",
+        "component9",
+        "component10",
+        "component11",
+        "component12",
+        "component13",
+        "component14",
+        "()Z",
+        "component15",
+        "component16",
+        "()Ljava/lang/Integer;",
+        "component17",
+        "component18",
+        "component19",
+        "component20",
+        "component21",
+        "copy",
+        "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZ)Lcom/spears/civilopedia/db/tables/Projects;",
+        "toString",
+        "hashCode",
+        "",
+        "other",
+        "equals",
+        "(Ljava/lang/Object;)Z",
+        "Ljava/lang/String;",
+        "getProjectType",
+        "getName",
+        "getShortName",
+        "getDescription",
+        "getPopupText",
+        "I",
+        "getCost",
+        "getCostProgressionModel",
+        "getCostProgressionParam1",
+        "getPrereqTech",
+        "getPrereqCivic",
+        "getPrereqDistrict",
+        "getRequiredBuilding",
+        "getVisualBuildingType",
+        "Z",
+        "getSpaceRace",
+        "getOuterDefenseRepair",
+        "Ljava/lang/Integer;",
+        "getMaxPlayerInstances",
+        "getAmenitiesWhileActive",
+        "getPrereqResource",
+        "getAdvisorType",
+        "getWMD",
+        "getUnlocksFromEffect",
+        "app_regularGoogleRelease"
+    }
+    k = 0x1
+    mv = {
+        0x2,
+        0x2,
+        0x0
+    }
+    xi = 0x30
+.end annotation
+
+
+# static fields
+.field public static final $stable:I
+
+
+# instance fields
+.field private final advisorType:Ljava/lang/String;
+
+.field private final amenitiesWhileActive:Ljava/lang/Integer;
+
+.field private final cost:I
+
+.field private final costProgressionModel:Ljava/lang/String;
+
+.field private final costProgressionParam1:I
+
+.field private final description:Ljava/lang/String;
+
+.field private final maxPlayerInstances:Ljava/lang/Integer;
+
+.field private final name:Ljava/lang/String;
+
+.field private final outerDefenseRepair:Z
+
+.field private final popupText:Ljava/lang/String;
+
+.field private final prereqCivic:Ljava/lang/String;
+
+.field private final prereqDistrict:Ljava/lang/String;
+
+.field private final prereqResource:Ljava/lang/String;
+
+.field private final prereqTech:Ljava/lang/String;
+
+.field private final projectType:Ljava/lang/String;
+
+.field private final requiredBuilding:Ljava/lang/String;
+
+.field private final shortName:Ljava/lang/String;
+
+.field private final spaceRace:Z
+
+.field private final unlocksFromEffect:Z
+
+.field private final visualBuildingType:Ljava/lang/String;
+
+.field private final wMD:Z
+
+
+# direct methods
+.method public constructor <init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZ)V
+    .locals 0
+
+    .line 1
+    invoke-static {p1, p2, p3, p7}, Ld80;->s(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    .line 5
+    .line 6
+    .line 7
+    iput-object p1, p0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iput-object p2, p0, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iput-object p3, p0, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iput-object p4, p0, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iput-object p5, p0, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iput p6, p0, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 18
+    .line 19
+    iput-object p7, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    iput p8, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 22
+    .line 23
+    iput-object p9, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    iput-object p10, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iput-object p11, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    iput-object p12, p0, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 30
+    .line 31
+    iput-object p13, p0, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 32
+    .line 33
+    iput-boolean p14, p0, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 34
+    .line 35
+    iput-boolean p15, p0, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 36
+    .line 37
+    move-object/from16 p1, p16
+
+    .line 38
+    .line 39
+    iput-object p1, p0, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 40
+    .line 41
+    move-object/from16 p1, p17
+
+    .line 42
+    .line 43
+    iput-object p1, p0, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 44
+    .line 45
+    move-object/from16 p1, p18
+
+    .line 46
+    .line 47
+    iput-object p1, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 48
+    .line 49
+    move-object/from16 p1, p19
+
+    .line 50
+    .line 51
+    iput-object p1, p0, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 52
+    .line 53
+    move/from16 p1, p20
+
+    .line 54
+    .line 55
+    iput-boolean p1, p0, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 56
+    .line 57
+    move/from16 p1, p21
+
+    .line 58
+    .line 59
+    iput-boolean p1, p0, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 60
+    .line 61
+    return-void
+.end method
+
+.method public static synthetic copy$default(Lcom/spears/civilopedia/db/tables/Projects;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZILjava/lang/Object;)Lcom/spears/civilopedia/db/tables/Projects;
+    .locals 17
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    move/from16 v1, p22
+
+    .line 4
+    .line 5
+    and-int/lit8 v2, v1, 0x1
+
+    .line 6
+    .line 7
+    if-eqz v2, :cond_0
+
+    .line 8
+    .line 9
+    iget-object v2, v0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    goto :goto_0
+
+    .line 12
+    :cond_0
+    move-object/from16 v2, p1
+
+    .line 13
+    .line 14
+    :goto_0
+    and-int/lit8 v3, v1, 0x2
+
+    .line 15
+    .line 16
+    if-eqz v3, :cond_1
+
+    .line 17
+    .line 18
+    iget-object v3, v0, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 19
+    .line 20
+    goto :goto_1
+
+    .line 21
+    :cond_1
+    move-object/from16 v3, p2
+
+    .line 22
+    .line 23
+    :goto_1
+    and-int/lit8 v4, v1, 0x4
+
+    .line 24
+    .line 25
+    if-eqz v4, :cond_2
+
+    .line 26
+    .line 27
+    iget-object v4, v0, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    goto :goto_2
+
+    .line 30
+    :cond_2
+    move-object/from16 v4, p3
+
+    .line 31
+    .line 32
+    :goto_2
+    and-int/lit8 v5, v1, 0x8
+
+    .line 33
+    .line 34
+    if-eqz v5, :cond_3
+
+    .line 35
+    .line 36
+    iget-object v5, v0, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 37
+    .line 38
+    goto :goto_3
+
+    .line 39
+    :cond_3
+    move-object/from16 v5, p4
+
+    .line 40
+    .line 41
+    :goto_3
+    and-int/lit8 v6, v1, 0x10
+
+    .line 42
+    .line 43
+    if-eqz v6, :cond_4
+
+    .line 44
+    .line 45
+    iget-object v6, v0, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 46
+    .line 47
+    goto :goto_4
+
+    .line 48
+    :cond_4
+    move-object/from16 v6, p5
+
+    .line 49
+    .line 50
+    :goto_4
+    and-int/lit8 v7, v1, 0x20
+
+    .line 51
+    .line 52
+    if-eqz v7, :cond_5
+
+    .line 53
+    .line 54
+    iget v7, v0, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 55
+    .line 56
+    goto :goto_5
+
+    .line 57
+    :cond_5
+    move/from16 v7, p6
+
+    .line 58
+    .line 59
+    :goto_5
+    and-int/lit8 v8, v1, 0x40
+
+    .line 60
+    .line 61
+    if-eqz v8, :cond_6
+
+    .line 62
+    .line 63
+    iget-object v8, v0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 64
+    .line 65
+    goto :goto_6
+
+    .line 66
+    :cond_6
+    move-object/from16 v8, p7
+
+    .line 67
+    .line 68
+    :goto_6
+    and-int/lit16 v9, v1, 0x80
+
+    .line 69
+    .line 70
+    if-eqz v9, :cond_7
+
+    .line 71
+    .line 72
+    iget v9, v0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 73
+    .line 74
+    goto :goto_7
+
+    .line 75
+    :cond_7
+    move/from16 v9, p8
+
+    .line 76
+    .line 77
+    :goto_7
+    and-int/lit16 v10, v1, 0x100
+
+    .line 78
+    .line 79
+    if-eqz v10, :cond_8
+
+    .line 80
+    .line 81
+    iget-object v10, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 82
+    .line 83
+    goto :goto_8
+
+    .line 84
+    :cond_8
+    move-object/from16 v10, p9
+
+    .line 85
+    .line 86
+    :goto_8
+    and-int/lit16 v11, v1, 0x200
+
+    .line 87
+    .line 88
+    if-eqz v11, :cond_9
+
+    .line 89
+    .line 90
+    iget-object v11, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 91
+    .line 92
+    goto :goto_9
+
+    .line 93
+    :cond_9
+    move-object/from16 v11, p10
+
+    .line 94
+    .line 95
+    :goto_9
+    and-int/lit16 v12, v1, 0x400
+
+    .line 96
+    .line 97
+    if-eqz v12, :cond_a
+
+    .line 98
+    .line 99
+    iget-object v12, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 100
+    .line 101
+    goto :goto_a
+
+    .line 102
+    :cond_a
+    move-object/from16 v12, p11
+
+    .line 103
+    .line 104
+    :goto_a
+    and-int/lit16 v13, v1, 0x800
+
+    .line 105
+    .line 106
+    if-eqz v13, :cond_b
+
+    .line 107
+    .line 108
+    iget-object v13, v0, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 109
+    .line 110
+    goto :goto_b
+
+    .line 111
+    :cond_b
+    move-object/from16 v13, p12
+
+    .line 112
+    .line 113
+    :goto_b
+    and-int/lit16 v14, v1, 0x1000
+
+    .line 114
+    .line 115
+    if-eqz v14, :cond_c
+
+    .line 116
+    .line 117
+    iget-object v14, v0, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 118
+    .line 119
+    goto :goto_c
+
+    .line 120
+    :cond_c
+    move-object/from16 v14, p13
+
+    .line 121
+    .line 122
+    :goto_c
+    and-int/lit16 v15, v1, 0x2000
+
+    .line 123
+    .line 124
+    if-eqz v15, :cond_d
+
+    .line 125
+    .line 126
+    iget-boolean v15, v0, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 127
+    .line 128
+    goto :goto_d
+
+    .line 129
+    :cond_d
+    move/from16 v15, p14
+
+    .line 130
+    .line 131
+    :goto_d
+    move-object/from16 p1, v2
+
+    .line 132
+    .line 133
+    and-int/lit16 v2, v1, 0x4000
+
+    .line 134
+    .line 135
+    if-eqz v2, :cond_e
+
+    .line 136
+    .line 137
+    iget-boolean v2, v0, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 138
+    .line 139
+    goto :goto_e
+
+    .line 140
+    :cond_e
+    move/from16 v2, p15
+
+    .line 141
+    .line 142
+    :goto_e
+    const v16, 0x8000
+
+    .line 143
+    .line 144
+    .line 145
+    and-int v16, v1, v16
+
+    .line 146
+    .line 147
+    if-eqz v16, :cond_f
+
+    .line 148
+    .line 149
+    iget-object v1, v0, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 150
+    .line 151
+    goto :goto_f
+
+    .line 152
+    :cond_f
+    move-object/from16 v1, p16
+
+    .line 153
+    .line 154
+    :goto_f
+    const/high16 v16, 0x10000
+
+    .line 155
+    .line 156
+    and-int v16, p22, v16
+
+    .line 157
+    .line 158
+    move-object/from16 p2, v1
+
+    .line 159
+    .line 160
+    if-eqz v16, :cond_10
+
+    .line 161
+    .line 162
+    iget-object v1, v0, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 163
+    .line 164
+    goto :goto_10
+
+    .line 165
+    :cond_10
+    move-object/from16 v1, p17
+
+    .line 166
+    .line 167
+    :goto_10
+    const/high16 v16, 0x20000
+
+    .line 168
+    .line 169
+    and-int v16, p22, v16
+
+    .line 170
+    .line 171
+    move-object/from16 p3, v1
+
+    .line 172
+    .line 173
+    if-eqz v16, :cond_11
+
+    .line 174
+    .line 175
+    iget-object v1, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 176
+    .line 177
+    goto :goto_11
+
+    .line 178
+    :cond_11
+    move-object/from16 v1, p18
+
+    .line 179
+    .line 180
+    :goto_11
+    const/high16 v16, 0x40000
+
+    .line 181
+    .line 182
+    and-int v16, p22, v16
+
+    .line 183
+    .line 184
+    move-object/from16 p4, v1
+
+    .line 185
+    .line 186
+    if-eqz v16, :cond_12
+
+    .line 187
+    .line 188
+    iget-object v1, v0, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 189
+    .line 190
+    goto :goto_12
+
+    .line 191
+    :cond_12
+    move-object/from16 v1, p19
+
+    .line 192
+    .line 193
+    :goto_12
+    const/high16 v16, 0x80000
+
+    .line 194
+    .line 195
+    and-int v16, p22, v16
+
+    .line 196
+    .line 197
+    move-object/from16 p5, v1
+
+    .line 198
+    .line 199
+    if-eqz v16, :cond_13
+
+    .line 200
+    .line 201
+    iget-boolean v1, v0, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 202
+    .line 203
+    goto :goto_13
+
+    .line 204
+    :cond_13
+    move/from16 v1, p20
+
+    .line 205
+    .line 206
+    :goto_13
+    const/high16 v16, 0x100000
+
+    .line 207
+    .line 208
+    and-int v16, p22, v16
+
+    .line 209
+    .line 210
+    if-eqz v16, :cond_14
+
+    .line 211
+    .line 212
+    move/from16 p6, v1
+
+    .line 213
+    .line 214
+    iget-boolean v1, v0, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 215
+    .line 216
+    move/from16 p21, p6
+
+    .line 217
+    .line 218
+    move/from16 p22, v1
+
+    .line 219
+    .line 220
+    :goto_14
+    move-object/from16 p17, p2
+
+    .line 221
+    .line 222
+    move-object/from16 p18, p3
+
+    .line 223
+    .line 224
+    move-object/from16 p19, p4
+
+    .line 225
+    .line 226
+    move-object/from16 p20, p5
+
+    .line 227
+    .line 228
+    move/from16 p16, v2
+
+    .line 229
+    .line 230
+    move-object/from16 p3, v3
+
+    .line 231
+    .line 232
+    move-object/from16 p4, v4
+
+    .line 233
+    .line 234
+    move-object/from16 p5, v5
+
+    .line 235
+    .line 236
+    move-object/from16 p6, v6
+
+    .line 237
+    .line 238
+    move/from16 p7, v7
+
+    .line 239
+    .line 240
+    move-object/from16 p8, v8
+
+    .line 241
+    .line 242
+    move/from16 p9, v9
+
+    .line 243
+    .line 244
+    move-object/from16 p10, v10
+
+    .line 245
+    .line 246
+    move-object/from16 p11, v11
+
+    .line 247
+    .line 248
+    move-object/from16 p12, v12
+
+    .line 249
+    .line 250
+    move-object/from16 p13, v13
+
+    .line 251
+    .line 252
+    move-object/from16 p14, v14
+
+    .line 253
+    .line 254
+    move/from16 p15, v15
+
+    .line 255
+    .line 256
+    move-object/from16 p2, p1
+
+    .line 257
+    .line 258
+    move-object/from16 p1, v0
+
+    .line 259
+    .line 260
+    goto :goto_15
+
+    .line 261
+    :cond_14
+    move/from16 p22, p21
+
+    .line 262
+    .line 263
+    move/from16 p21, v1
+
+    .line 264
+    .line 265
+    goto :goto_14
+
+    .line 266
+    :goto_15
+    invoke-virtual/range {p1 .. p22}, Lcom/spears/civilopedia/db/tables/Projects;->copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZ)Lcom/spears/civilopedia/db/tables/Projects;
+
+    .line 267
+    .line 268
+    .line 269
+    move-result-object v0
+
+    .line 270
+    return-object v0
+.end method
+
+
+# virtual methods
+.method public final component1()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component10()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component11()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component12()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component13()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component14()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component15()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component16()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component17()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component18()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component19()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component2()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component20()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component21()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component3()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component4()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component5()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component6()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component7()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final component8()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final component9()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final copy(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZ)Lcom/spears/civilopedia/db/tables/Projects;
+    .locals 22
+
+    .line 1
+    invoke-virtual/range {p1 .. p1}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 2
+    .line 3
+    .line 4
+    invoke-virtual/range {p2 .. p2}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 5
+    .line 6
+    .line 7
+    invoke-virtual/range {p3 .. p3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 8
+    .line 9
+    .line 10
+    invoke-virtual/range {p7 .. p7}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    .line 11
+    .line 12
+    .line 13
+    new-instance v0, Lcom/spears/civilopedia/db/tables/Projects;
+
+    .line 14
+    .line 15
+    move-object/from16 v1, p1
+
+    .line 16
+    .line 17
+    move-object/from16 v2, p2
+
+    .line 18
+    .line 19
+    move-object/from16 v3, p3
+
+    .line 20
+    .line 21
+    move-object/from16 v4, p4
+
+    .line 22
+    .line 23
+    move-object/from16 v5, p5
+
+    .line 24
+    .line 25
+    move/from16 v6, p6
+
+    .line 26
+    .line 27
+    move-object/from16 v7, p7
+
+    .line 28
+    .line 29
+    move/from16 v8, p8
+
+    .line 30
+    .line 31
+    move-object/from16 v9, p9
+
+    .line 32
+    .line 33
+    move-object/from16 v10, p10
+
+    .line 34
+    .line 35
+    move-object/from16 v11, p11
+
+    .line 36
+    .line 37
+    move-object/from16 v12, p12
+
+    .line 38
+    .line 39
+    move-object/from16 v13, p13
+
+    .line 40
+    .line 41
+    move/from16 v14, p14
+
+    .line 42
+    .line 43
+    move/from16 v15, p15
+
+    .line 44
+    .line 45
+    move-object/from16 v16, p16
+
+    .line 46
+    .line 47
+    move-object/from16 v17, p17
+
+    .line 48
+    .line 49
+    move-object/from16 v18, p18
+
+    .line 50
+    .line 51
+    move-object/from16 v19, p19
+
+    .line 52
+    .line 53
+    move/from16 v20, p20
+
+    .line 54
+    .line 55
+    move/from16 v21, p21
+
+    .line 56
+    .line 57
+    invoke-direct/range {v0 .. v21}, Lcom/spears/civilopedia/db/tables/Projects;-><init>(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ILjava/lang/String;ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;ZZLjava/lang/Integer;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;ZZ)V
+
+    .line 58
+    .line 59
+    .line 60
+    return-object v0
+.end method
+
+.method public equals(Ljava/lang/Object;)Z
+    .locals 4
+
+    .line 1
+    const/4 v0, 0x1
+
+    .line 2
+    if-ne p0, p1, :cond_0
+
+    .line 3
+    .line 4
+    return v0
+
+    .line 5
+    :cond_0
+    instance-of v1, p1, Lcom/spears/civilopedia/db/tables/Projects;
+
+    .line 6
+    .line 7
+    const/4 v2, 0x0
+
+    .line 8
+    if-nez v1, :cond_1
+
+    .line 9
+    .line 10
+    return v2
+
+    .line 11
+    :cond_1
+    check-cast p1, Lcom/spears/civilopedia/db/tables/Projects;
+
+    .line 12
+    .line 13
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 14
+    .line 15
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 18
+    .line 19
+    .line 20
+    move-result v1
+
+    .line 21
+    if-nez v1, :cond_2
+
+    .line 22
+    .line 23
+    return v2
+
+    .line 24
+    :cond_2
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 25
+    .line 26
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 27
+    .line 28
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 29
+    .line 30
+    .line 31
+    move-result v1
+
+    .line 32
+    if-nez v1, :cond_3
+
+    .line 33
+    .line 34
+    return v2
+
+    .line 35
+    :cond_3
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 38
+    .line 39
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 40
+    .line 41
+    .line 42
+    move-result v1
+
+    .line 43
+    if-nez v1, :cond_4
+
+    .line 44
+    .line 45
+    return v2
+
+    .line 46
+    :cond_4
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 47
+    .line 48
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 49
+    .line 50
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 51
+    .line 52
+    .line 53
+    move-result v1
+
+    .line 54
+    if-nez v1, :cond_5
+
+    .line 55
+    .line 56
+    return v2
+
+    .line 57
+    :cond_5
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 58
+    .line 59
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 60
+    .line 61
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 62
+    .line 63
+    .line 64
+    move-result v1
+
+    .line 65
+    if-nez v1, :cond_6
+
+    .line 66
+    .line 67
+    return v2
+
+    .line 68
+    :cond_6
+    iget v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 69
+    .line 70
+    iget v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 71
+    .line 72
+    if-eq v1, v3, :cond_7
+
+    .line 73
+    .line 74
+    return v2
+
+    .line 75
+    :cond_7
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 76
+    .line 77
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 78
+    .line 79
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v1
+
+    .line 83
+    if-nez v1, :cond_8
+
+    .line 84
+    .line 85
+    return v2
+
+    .line 86
+    :cond_8
+    iget v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 87
+    .line 88
+    iget v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 89
+    .line 90
+    if-eq v1, v3, :cond_9
+
+    .line 91
+    .line 92
+    return v2
+
+    .line 93
+    :cond_9
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 94
+    .line 95
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 96
+    .line 97
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 98
+    .line 99
+    .line 100
+    move-result v1
+
+    .line 101
+    if-nez v1, :cond_a
+
+    .line 102
+    .line 103
+    return v2
+
+    .line 104
+    :cond_a
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 105
+    .line 106
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 107
+    .line 108
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 109
+    .line 110
+    .line 111
+    move-result v1
+
+    .line 112
+    if-nez v1, :cond_b
+
+    .line 113
+    .line 114
+    return v2
+
+    .line 115
+    :cond_b
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 116
+    .line 117
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 118
+    .line 119
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 120
+    .line 121
+    .line 122
+    move-result v1
+
+    .line 123
+    if-nez v1, :cond_c
+
+    .line 124
+    .line 125
+    return v2
+
+    .line 126
+    :cond_c
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 127
+    .line 128
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 129
+    .line 130
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 131
+    .line 132
+    .line 133
+    move-result v1
+
+    .line 134
+    if-nez v1, :cond_d
+
+    .line 135
+    .line 136
+    return v2
+
+    .line 137
+    :cond_d
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 138
+    .line 139
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 140
+    .line 141
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 142
+    .line 143
+    .line 144
+    move-result v1
+
+    .line 145
+    if-nez v1, :cond_e
+
+    .line 146
+    .line 147
+    return v2
+
+    .line 148
+    :cond_e
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 149
+    .line 150
+    iget-boolean v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 151
+    .line 152
+    if-eq v1, v3, :cond_f
+
+    .line 153
+    .line 154
+    return v2
+
+    .line 155
+    :cond_f
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 156
+    .line 157
+    iget-boolean v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 158
+    .line 159
+    if-eq v1, v3, :cond_10
+
+    .line 160
+    .line 161
+    return v2
+
+    .line 162
+    :cond_10
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 163
+    .line 164
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 165
+    .line 166
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 167
+    .line 168
+    .line 169
+    move-result v1
+
+    .line 170
+    if-nez v1, :cond_11
+
+    .line 171
+    .line 172
+    return v2
+
+    .line 173
+    :cond_11
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 174
+    .line 175
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 176
+    .line 177
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 178
+    .line 179
+    .line 180
+    move-result v1
+
+    .line 181
+    if-nez v1, :cond_12
+
+    .line 182
+    .line 183
+    return v2
+
+    .line 184
+    :cond_12
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 185
+    .line 186
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 187
+    .line 188
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 189
+    .line 190
+    .line 191
+    move-result v1
+
+    .line 192
+    if-nez v1, :cond_13
+
+    .line 193
+    .line 194
+    return v2
+
+    .line 195
+    :cond_13
+    iget-object v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 196
+    .line 197
+    iget-object v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 198
+    .line 199
+    invoke-static {v1, v3}, Lda1;->g(Ljava/lang/Object;Ljava/lang/Object;)Z
+
+    .line 200
+    .line 201
+    .line 202
+    move-result v1
+
+    .line 203
+    if-nez v1, :cond_14
+
+    .line 204
+    .line 205
+    return v2
+
+    .line 206
+    :cond_14
+    iget-boolean v1, p0, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 207
+    .line 208
+    iget-boolean v3, p1, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 209
+    .line 210
+    if-eq v1, v3, :cond_15
+
+    .line 211
+    .line 212
+    return v2
+
+    .line 213
+    :cond_15
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 214
+    .line 215
+    iget-boolean p1, p1, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 216
+    .line 217
+    if-eq p0, p1, :cond_16
+
+    .line 218
+    .line 219
+    return v2
+
+    .line 220
+    :cond_16
+    return v0
+.end method
+
+.method public final getAdvisorType()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getAmenitiesWhileActive()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getCost()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getCostProgressionModel()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getCostProgressionParam1()I
+    .locals 0
+
+    .line 1
+    iget p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getDescription()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getMaxPlayerInstances()Ljava/lang/Integer;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getName()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getOuterDefenseRepair()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getPopupText()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getPrereqCivic()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getPrereqDistrict()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getPrereqResource()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getPrereqTech()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getProjectType()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getRequiredBuilding()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getShortName()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getSpaceRace()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getUnlocksFromEffect()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public final getVisualBuildingType()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public final getWMD()Z
+    .locals 0
+
+    .line 1
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 2
+    .line 3
+    return p0
+.end method
+
+.method public hashCode()I
+    .locals 6
+
+    .line 1
+    iget-object v0, p0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    invoke-virtual {v0}, Ljava/lang/String;->hashCode()I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result v0
+
+    .line 7
+    const/16 v1, 0x1f
+
+    .line 8
+    .line 9
+    mul-int/2addr v0, v1
+
+    .line 10
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 11
+    .line 12
+    invoke-static {v0, v1, v2}, Lfd2;->e(IILjava/lang/String;)I
+
+    .line 13
+    .line 14
+    .line 15
+    move-result v0
+
+    .line 16
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 17
+    .line 18
+    invoke-static {v0, v1, v2}, Lfd2;->e(IILjava/lang/String;)I
+
+    .line 19
+    .line 20
+    .line 21
+    move-result v0
+
+    .line 22
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 23
+    .line 24
+    const/4 v3, 0x0
+
+    .line 25
+    if-nez v2, :cond_0
+
+    .line 26
+    .line 27
+    move v2, v3
+
+    .line 28
+    goto :goto_0
+
+    .line 29
+    :cond_0
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 30
+    .line 31
+    .line 32
+    move-result v2
+
+    .line 33
+    :goto_0
+    add-int/2addr v0, v2
+
+    .line 34
+    mul-int/2addr v0, v1
+
+    .line 35
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 36
+    .line 37
+    if-nez v2, :cond_1
+
+    .line 38
+    .line 39
+    move v2, v3
+
+    .line 40
+    goto :goto_1
+
+    .line 41
+    :cond_1
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 42
+    .line 43
+    .line 44
+    move-result v2
+
+    .line 45
+    :goto_1
+    add-int/2addr v0, v2
+
+    .line 46
+    mul-int/2addr v0, v1
+
+    .line 47
+    iget v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 48
+    .line 49
+    add-int/2addr v0, v2
+
+    .line 50
+    mul-int/2addr v0, v1
+
+    .line 51
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 52
+    .line 53
+    invoke-static {v0, v1, v2}, Lfd2;->e(IILjava/lang/String;)I
+
+    .line 54
+    .line 55
+    .line 56
+    move-result v0
+
+    .line 57
+    iget v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 58
+    .line 59
+    add-int/2addr v0, v2
+
+    .line 60
+    mul-int/2addr v0, v1
+
+    .line 61
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 62
+    .line 63
+    if-nez v2, :cond_2
+
+    .line 64
+    .line 65
+    move v2, v3
+
+    .line 66
+    goto :goto_2
+
+    .line 67
+    :cond_2
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 68
+    .line 69
+    .line 70
+    move-result v2
+
+    .line 71
+    :goto_2
+    add-int/2addr v0, v2
+
+    .line 72
+    mul-int/2addr v0, v1
+
+    .line 73
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 74
+    .line 75
+    if-nez v2, :cond_3
+
+    .line 76
+    .line 77
+    move v2, v3
+
+    .line 78
+    goto :goto_3
+
+    .line 79
+    :cond_3
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 80
+    .line 81
+    .line 82
+    move-result v2
+
+    .line 83
+    :goto_3
+    add-int/2addr v0, v2
+
+    .line 84
+    mul-int/2addr v0, v1
+
+    .line 85
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 86
+    .line 87
+    if-nez v2, :cond_4
+
+    .line 88
+    .line 89
+    move v2, v3
+
+    .line 90
+    goto :goto_4
+
+    .line 91
+    :cond_4
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 92
+    .line 93
+    .line 94
+    move-result v2
+
+    .line 95
+    :goto_4
+    add-int/2addr v0, v2
+
+    .line 96
+    mul-int/2addr v0, v1
+
+    .line 97
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 98
+    .line 99
+    if-nez v2, :cond_5
+
+    .line 100
+    .line 101
+    move v2, v3
+
+    .line 102
+    goto :goto_5
+
+    .line 103
+    :cond_5
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 104
+    .line 105
+    .line 106
+    move-result v2
+
+    .line 107
+    :goto_5
+    add-int/2addr v0, v2
+
+    .line 108
+    mul-int/2addr v0, v1
+
+    .line 109
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 110
+    .line 111
+    if-nez v2, :cond_6
+
+    .line 112
+    .line 113
+    move v2, v3
+
+    .line 114
+    goto :goto_6
+
+    .line 115
+    :cond_6
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 116
+    .line 117
+    .line 118
+    move-result v2
+
+    .line 119
+    :goto_6
+    add-int/2addr v0, v2
+
+    .line 120
+    mul-int/2addr v0, v1
+
+    .line 121
+    iget-boolean v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 122
+    .line 123
+    const/16 v4, 0x4d5
+
+    .line 124
+    .line 125
+    const/16 v5, 0x4cf
+
+    .line 126
+    .line 127
+    if-eqz v2, :cond_7
+
+    .line 128
+    .line 129
+    move v2, v5
+
+    .line 130
+    goto :goto_7
+
+    .line 131
+    :cond_7
+    move v2, v4
+
+    .line 132
+    :goto_7
+    add-int/2addr v0, v2
+
+    .line 133
+    mul-int/2addr v0, v1
+
+    .line 134
+    iget-boolean v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 135
+    .line 136
+    if-eqz v2, :cond_8
+
+    .line 137
+    .line 138
+    move v2, v5
+
+    .line 139
+    goto :goto_8
+
+    .line 140
+    :cond_8
+    move v2, v4
+
+    .line 141
+    :goto_8
+    add-int/2addr v0, v2
+
+    .line 142
+    mul-int/2addr v0, v1
+
+    .line 143
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 144
+    .line 145
+    if-nez v2, :cond_9
+
+    .line 146
+    .line 147
+    move v2, v3
+
+    .line 148
+    goto :goto_9
+
+    .line 149
+    :cond_9
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 150
+    .line 151
+    .line 152
+    move-result v2
+
+    .line 153
+    :goto_9
+    add-int/2addr v0, v2
+
+    .line 154
+    mul-int/2addr v0, v1
+
+    .line 155
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 156
+    .line 157
+    if-nez v2, :cond_a
+
+    .line 158
+    .line 159
+    move v2, v3
+
+    .line 160
+    goto :goto_a
+
+    .line 161
+    :cond_a
+    invoke-virtual {v2}, Ljava/lang/Object;->hashCode()I
+
+    .line 162
+    .line 163
+    .line 164
+    move-result v2
+
+    .line 165
+    :goto_a
+    add-int/2addr v0, v2
+
+    .line 166
+    mul-int/2addr v0, v1
+
+    .line 167
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 168
+    .line 169
+    if-nez v2, :cond_b
+
+    .line 170
+    .line 171
+    move v2, v3
+
+    .line 172
+    goto :goto_b
+
+    .line 173
+    :cond_b
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 174
+    .line 175
+    .line 176
+    move-result v2
+
+    .line 177
+    :goto_b
+    add-int/2addr v0, v2
+
+    .line 178
+    mul-int/2addr v0, v1
+
+    .line 179
+    iget-object v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 180
+    .line 181
+    if-nez v2, :cond_c
+
+    .line 182
+    .line 183
+    goto :goto_c
+
+    .line 184
+    :cond_c
+    invoke-virtual {v2}, Ljava/lang/String;->hashCode()I
+
+    .line 185
+    .line 186
+    .line 187
+    move-result v3
+
+    .line 188
+    :goto_c
+    add-int/2addr v0, v3
+
+    .line 189
+    mul-int/2addr v0, v1
+
+    .line 190
+    iget-boolean v2, p0, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 191
+    .line 192
+    if-eqz v2, :cond_d
+
+    .line 193
+    .line 194
+    move v2, v5
+
+    .line 195
+    goto :goto_d
+
+    .line 196
+    :cond_d
+    move v2, v4
+
+    .line 197
+    :goto_d
+    add-int/2addr v0, v2
+
+    .line 198
+    mul-int/2addr v0, v1
+
+    .line 199
+    iget-boolean p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 200
+    .line 201
+    if-eqz p0, :cond_e
+
+    .line 202
+    .line 203
+    move v4, v5
+
+    .line 204
+    :cond_e
+    add-int/2addr v0, v4
+
+    .line 205
+    return v0
+.end method
+
+.method public primaryKey()Ljava/lang/String;
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 2
+    .line 3
+    return-object p0
+.end method
+
+.method public toString()Ljava/lang/String;
+    .locals 23
+
+    .line 1
+    move-object/from16 v0, p0
+
+    .line 2
+    .line 3
+    iget-object v1, v0, Lcom/spears/civilopedia/db/tables/Projects;->projectType:Ljava/lang/String;
+
+    .line 4
+    .line 5
+    iget-object v2, v0, Lcom/spears/civilopedia/db/tables/Projects;->name:Ljava/lang/String;
+
+    .line 6
+    .line 7
+    iget-object v3, v0, Lcom/spears/civilopedia/db/tables/Projects;->shortName:Ljava/lang/String;
+
+    .line 8
+    .line 9
+    iget-object v4, v0, Lcom/spears/civilopedia/db/tables/Projects;->description:Ljava/lang/String;
+
+    .line 10
+    .line 11
+    iget-object v5, v0, Lcom/spears/civilopedia/db/tables/Projects;->popupText:Ljava/lang/String;
+
+    .line 12
+    .line 13
+    iget v6, v0, Lcom/spears/civilopedia/db/tables/Projects;->cost:I
+
+    .line 14
+    .line 15
+    iget-object v7, v0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionModel:Ljava/lang/String;
+
+    .line 16
+    .line 17
+    iget v8, v0, Lcom/spears/civilopedia/db/tables/Projects;->costProgressionParam1:I
+
+    .line 18
+    .line 19
+    iget-object v9, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqTech:Ljava/lang/String;
+
+    .line 20
+    .line 21
+    iget-object v10, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqCivic:Ljava/lang/String;
+
+    .line 22
+    .line 23
+    iget-object v11, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqDistrict:Ljava/lang/String;
+
+    .line 24
+    .line 25
+    iget-object v12, v0, Lcom/spears/civilopedia/db/tables/Projects;->requiredBuilding:Ljava/lang/String;
+
+    .line 26
+    .line 27
+    iget-object v13, v0, Lcom/spears/civilopedia/db/tables/Projects;->visualBuildingType:Ljava/lang/String;
+
+    .line 28
+    .line 29
+    iget-boolean v14, v0, Lcom/spears/civilopedia/db/tables/Projects;->spaceRace:Z
+
+    .line 30
+    .line 31
+    iget-boolean v15, v0, Lcom/spears/civilopedia/db/tables/Projects;->outerDefenseRepair:Z
+
+    .line 32
+    .line 33
+    move/from16 v16, v15
+
+    .line 34
+    .line 35
+    iget-object v15, v0, Lcom/spears/civilopedia/db/tables/Projects;->maxPlayerInstances:Ljava/lang/Integer;
+
+    .line 36
+    .line 37
+    move-object/from16 v17, v15
+
+    .line 38
+    .line 39
+    iget-object v15, v0, Lcom/spears/civilopedia/db/tables/Projects;->amenitiesWhileActive:Ljava/lang/Integer;
+
+    .line 40
+    .line 41
+    move-object/from16 v18, v15
+
+    .line 42
+    .line 43
+    iget-object v15, v0, Lcom/spears/civilopedia/db/tables/Projects;->prereqResource:Ljava/lang/String;
+
+    .line 44
+    .line 45
+    move-object/from16 v19, v15
+
+    .line 46
+    .line 47
+    iget-object v15, v0, Lcom/spears/civilopedia/db/tables/Projects;->advisorType:Ljava/lang/String;
+
+    .line 48
+    .line 49
+    move-object/from16 v20, v15
+
+    .line 50
+    .line 51
+    iget-boolean v15, v0, Lcom/spears/civilopedia/db/tables/Projects;->wMD:Z
+
+    .line 52
+    .line 53
+    iget-boolean v0, v0, Lcom/spears/civilopedia/db/tables/Projects;->unlocksFromEffect:Z
+
+    .line 54
+    .line 55
+    move/from16 p0, v0
+
+    .line 56
+    .line 57
+    const-string v0, ", name="
+
+    .line 58
+    .line 59
+    move/from16 v21, v15
+
+    .line 60
+    .line 61
+    const-string v15, ", shortName="
+
+    .line 62
+    .line 63
+    move-object/from16 v22, v13
+
+    .line 64
+    .line 65
+    const-string v13, "Projects(projectType="
+
+    .line 66
+    .line 67
+    invoke-static {v13, v1, v0, v2, v15}, Las;->z(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 68
+    .line 69
+    .line 70
+    move-result-object v0
+
+    .line 71
+    const-string v1, ", description="
+
+    .line 72
+    .line 73
+    const-string v2, ", popupText="
+
+    .line 74
+    .line 75
+    invoke-static {v0, v3, v1, v4, v2}, Las;->K(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 76
+    .line 77
+    .line 78
+    const-string v1, ", cost="
+
+    .line 79
+    .line 80
+    const-string v2, ", costProgressionModel="
+
+    .line 81
+    .line 82
+    invoke-static {v6, v5, v1, v2, v0}, Lfd2;->r(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 83
+    .line 84
+    .line 85
+    const-string v1, ", costProgressionParam1="
+
+    .line 86
+    .line 87
+    const-string v2, ", prereqTech="
+
+    .line 88
+    .line 89
+    invoke-static {v8, v7, v1, v2, v0}, Lfd2;->r(ILjava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;)V
+
+    .line 90
+    .line 91
+    .line 92
+    const-string v1, ", prereqCivic="
+
+    .line 93
+    .line 94
+    const-string v2, ", prereqDistrict="
+
+    .line 95
+    .line 96
+    invoke-static {v0, v9, v1, v10, v2}, Las;->K(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 97
+    .line 98
+    .line 99
+    const-string v1, ", requiredBuilding="
+
+    .line 100
+    .line 101
+    const-string v2, ", visualBuildingType="
+
+    .line 102
+    .line 103
+    invoke-static {v0, v11, v1, v12, v2}, Las;->K(Ljava/lang/StringBuilder;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 104
+    .line 105
+    .line 106
+    const-string v1, ", spaceRace="
+
+    .line 107
+    .line 108
+    const-string v2, ", outerDefenseRepair="
+
+    .line 109
+    .line 110
+    move-object/from16 v3, v22
+
+    .line 111
+    .line 112
+    invoke-static {v3, v1, v2, v0, v14}, Lfd2;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;Z)V
+
+    .line 113
+    .line 114
+    .line 115
+    move/from16 v1, v16
+
+    .line 116
+    .line 117
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
+
+    .line 118
+    .line 119
+    .line 120
+    const-string v1, ", maxPlayerInstances="
+
+    .line 121
+    .line 122
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 123
+    .line 124
+    .line 125
+    move-object/from16 v1, v17
+
+    .line 126
+    .line 127
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    .line 128
+    .line 129
+    .line 130
+    const-string v1, ", amenitiesWhileActive="
+
+    .line 131
+    .line 132
+    invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    .line 133
+    .line 134
+    .line 135
+    const-string v1, ", prereqResource="
+
+    .line 136
+    .line 137
+    const-string v2, ", advisorType="
+
+    .line 138
+    .line 139
+    move-object/from16 v3, v18
+
+    .line 140
+    .line 141
+    move-object/from16 v4, v19
+
+    .line 142
+    .line 143
+    invoke-static {v0, v3, v1, v4, v2}, Las;->I(Ljava/lang/StringBuilder;Ljava/lang/Integer;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;)V
+
+    .line 144
+    .line 145
+    .line 146
+    const-string v1, ", wMD="
+
+    .line 147
+    .line 148
+    const-string v2, ", unlocksFromEffect="
+
+    .line 149
+    .line 150
+    move-object/from16 v3, v20
+
+    .line 151
+    .line 152
+    move/from16 v4, v21
+
+    .line 153
+    .line 154
+    invoke-static {v3, v1, v2, v0, v4}, Lfd2;->w(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/StringBuilder;Z)V
+
+    .line 155
+    .line 156
+    .line 157
+    const-string v1, ")"
+
+    .line 158
+    .line 159
+    move/from16 v2, p0
+
+    .line 160
+    .line 161
+    invoke-static {v0, v2, v1}, Lfd2;->p(Ljava/lang/StringBuilder;ZLjava/lang/String;)Ljava/lang/String;
+
+    .line 162
+    .line 163
+    .line 164
+    move-result-object v0
+
+    .line 165
+    return-object v0
+.end method

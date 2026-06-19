@@ -1,0 +1,62 @@
+.class public final Lcr4;
+.super Lcom/google/android/gms/internal/measurement/zzcz;
+.source "r8-map-id-9557960e7f1fd717aaa4475931a9fe1958392a9212be702aa22a2b0afaf31f05"
+
+
+# instance fields
+.field public final n:Lcom/google/android/gms/measurement/internal/zzjq;
+
+
+# direct methods
+.method public constructor <init>(Lcom/google/android/gms/measurement/internal/zzjq;)V
+    .locals 0
+
+    .line 1
+    invoke-direct {p0}, Lcom/google/android/gms/internal/measurement/zzcz;-><init>()V
+
+    .line 2
+    .line 3
+    .line 4
+    iput-object p1, p0, Lcr4;->n:Lcom/google/android/gms/measurement/internal/zzjq;
+
+    .line 5
+    .line 6
+    return-void
+.end method
+
+
+# virtual methods
+.method public final zze(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;J)V
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcr4;->n:Lcom/google/android/gms/measurement/internal/zzjq;
+
+    .line 2
+    .line 3
+    invoke-interface/range {p0 .. p5}, Lcom/google/android/gms/measurement/internal/zzjq;->onEvent(Ljava/lang/String;Ljava/lang/String;Landroid/os/Bundle;J)V
+
+    .line 4
+    .line 5
+    .line 6
+    return-void
+.end method
+
+.method public final zzf()I
+    .locals 0
+
+    .line 1
+    iget-object p0, p0, Lcr4;->n:Lcom/google/android/gms/measurement/internal/zzjq;
+
+    .line 2
+    .line 3
+    invoke-static {p0}, Ljava/lang/System;->identityHashCode(Ljava/lang/Object;)I
+
+    .line 4
+    .line 5
+    .line 6
+    move-result p0
+
+    .line 7
+    return p0
+.end method
